@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Kumbh";
+    src: url("fonts/Kumbh_Sans/KumbhSans-Light.ttf");
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: "Kumbh";
+    src: url("fonts/Kumbh_Sans/KumbhSans-Regular.ttf");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Kumbh";
+    src: url("fonts/Kumbh_Sans/KumbhSans-Bold.ttf");
+    font-weight: 900;
+  }
+
+:root {
+ 
+    --aquamarine: #85ffc7ff;
+    --skobeloff: #297373ff;
+    --coral: #ff8552ff;
+    --platinum: #e6e6e6ff;
+    --onyx: #39393aff;
+    --primary-color: var(--aquamarine, gray);;   
+    --secondary-color: var(--skobeloff, gray);;   
+    --tertiary-color: var(--coral, gray);   
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    font-size: 100%;
+    font-family: "Kumbh", Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 5rem;
+    border: 20px solid var(--tertiary-color);
+    color: var(--onyx);
+    font-size: 16px;
+}
+
+section,
+header {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--onyx);
+}
+
+h2, h3 {
+    color: var(--tertiary-color);
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+
+
