@@ -76,6 +76,9 @@ h3 {
     margin-top: 1.8rem;
 }
 
+code {
+    font-size: .9rem;
+}
 .module_title {
     display: flex;
     align-items: flex-start;
@@ -87,6 +90,19 @@ h3 {
     display: inline-block;
     margin-right: 20px;
 }
+a {
+    background-color: var(--primary-color);
+    color: black;
+    text-decoration: none;
+    padding: 2px 3px 0 3px;
+    display: inline-block;
+    transition: all .2s;
+}
+a:hover {
+    color: var(--primary-color);
+    background-color: black;    
+}
+
 p {
     margin-top: 0;
     margin-bottom: 1rem;
