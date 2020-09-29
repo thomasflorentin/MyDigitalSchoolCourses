@@ -1,0 +1,131 @@
+/* 
+ DICTIONNAIRE CSS : 
+ https://devdocs.io/css/
+ */
+
+
+/* 
+ Syntaxe CSS 
+ */
+
+selecteur {
+    propriété: valeur;
+}
+
+
+
+/* 
+ Les principaux types de sélecteurs css
+ voir d'autres ici : https://devdocs.io/css-selectors/
+ */
+
+div { color: red; } /* une balise HTML */
+.ma_classe{ color: red; } /* une classe : <div class="ma_classe">...</div> */
+#mon_identifiant { color: red; } /* un identifiant : <div id="mon_identifiant">...</div> */
+a:hover { color: red; } /* pseudo classe. ici l'état hover d'un lien */
+p:last-child { color: red; } /* pseudo classe, dernier enfant d'un type spécifique. Ici le dernier enfant p */
+[data-attr] { color: red; } /* un attribut, ici une balise HTML avec un attribut spécifique <div data-attr="">...</div> */
+ul li { color: red; } /* une combinaison : tous les <li> contenus dans <ul>, enfants et grands-enfants confondus */
+ul > li { color: red; } /* une combinaison : tous les <li> directement enfant de <ul> (donc pas les grands-enfants */
+p + p  { color: red; } /* une combinaison : l'élément adjaçant (la balise <p> soeur d'une autre balise <p>) */
+div ~ p { color: red; } /* une combinaison : tous les adjaçants <p> de <div> */
+
+
+
+/* 
+ Les propriétés de bloc
+ Ou comment styliser une "boite" 
+ */
+
+div {
+    box-sizing: border-box;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+    margin: 20px 10px 25px 30px;
+    padding: 5px 10px 9px 7px;
+    background-color: black;
+    background-image: url('mon_image.jpg');
+    background-position: center center;
+    background-repeat: no-repeat; /* Quand une image est en "background", elle est répétée par défaut. Pour empêcher cela, il faut le spécifier */
+    float: left; /* Ferrer à gauche une boite */
+    clear: both; /* Réinitialiser le flux des floats : donc mettre à la ligne la boite */
+    box-shadow: 2px 2px 2px 14px black;  /* Ombré d'un bloc */
+    border-radius: 20px; /* Arrondi d'un bloc. TIP : pour faire un objet rond >> border-radius: 50%; */	
+    opactity: 0.5 /* Opacité de l'élément. Ici : transparence à 50% */
+}
+
+
+
+/* 
+ Les propriétés spécifiques pour les images
+ */
+
+img {
+    object-fit: cover; /* l'image "couvre" le block parent */
+    object-position: center;
+}
+
+
+
+/* 
+ La propriété flex
+ Ou comment établir une grille facilement et aligner les élements
+ voir plus ici : https://devdocs.io/css-flexible-box-layout/
+ */
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+    .enfant_1 {
+        flex: 0 0 20%;
+        align-self: flex-start;
+        order: 2
+    }
+    .enfant_2 {
+        flex: 0 0 70%;
+        align-self: flex-end;
+        order: 1
+    }
+
+
+
+/* 
+ Les propriétés typographiques
+ Ou comment styliser nos textes
+ */
+
+@font-face {
+    font-family: "MaTypo"; /* on donne un nom à la typo que l'on insère dans notre document */
+    src: url("Epilogue/Epilogue-Light.ttf") /* on indique le chemin vers le fichiers de la typo */
+         format("truetype"); /* et on spécifie son format */
+    font-weight: 900; /* je peux importer plusieurs fichiers et définir le bon fichier pour la bonne graisse. Ici : bold (gras)*/
+}
+
+@font-face {
+    font-family: "MaTypo"; /* on donne un nom à la typo que l'on insère dans notre document */
+    src: url("Epilogue/Epilogue-Light.ttf") /* on indique le chemin vers le fichiers de la typo */
+         format("truetype"); /* et on spécifie son format */
+    font-weight: 400; /* je peux importer plusieurs fichiers et définir le bon fichier pour la bonne graisse. Ici : regular (normal) */
+}
+
+h1 {
+    color: blue;
+    font-family: "MaTypo", 'Courier New', Courier, monospace;
+    font-size: 20rem;
+    line-height: 1.4;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 1px 1px 2px black; 
+}
+
+

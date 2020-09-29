@@ -1,0 +1,16 @@
+/*  
+ 
+ */
+
+
+
+    @font-face {
+        font-family: "Epilogue";
+        src: url("Epilogue/Epilogue-Light.ttf") format("truetype");
+    }
+
+
+    body {
+        font-family: Arial;
+        font-family: "Epilogue";
+    }

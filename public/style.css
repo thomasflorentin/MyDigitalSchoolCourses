@@ -126,6 +126,7 @@ li:focus {
     border: 1px dotted var(--primary-color);
     padding: .5rem;
     font-weight: 900;
+    font-size: 1.2em;
 }
 li:focus p {
     display: block;
