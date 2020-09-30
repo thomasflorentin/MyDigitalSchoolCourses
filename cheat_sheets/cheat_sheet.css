@@ -40,17 +40,45 @@ div ~ p { color: red; } /* une combinaison : tous les adjaçants <p> de <div> */
 div {
     box-sizing: border-box;
     display: block;
-    width: 100px;
-    height: 100px;
+    display: inline-block; /* cette valeur de display permet de rendre une balise comme en inline, c'est-à-dire simplement un élément s'insérant dans un autre, mais en lui pemettant des marges et une largeur, etc. Très utile pour les liens par exemple ! cf. plus bas */
+
+    float: left; /* Ferrer à gauche une boite */
+    clear: both; /* Réinitialiser le flux des floats : donc mettre à la ligne la boite */
+
+    width: 50%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 200px;
+
+    /* bordures du bloc. Les quatre bordures à la fois OU l'une seulement */
     border: 1px solid blue;
+    border-top: 1px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+    border-bottom: 1px solid blue;
+
+    /* marges exterieures */
     margin: 20px 10px 25px 30px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+
+    /* Marges intérieures */
     padding: 5px 10px 9px 7px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 9px;
+    padding-left: 7px;
+
+    /* Les fonds (background) des blocs */
     background-color: black;
+    background-color:rgba(0,0,0, 0.5); /* une autre unité pour bg-color. rgba permet d'inclure une opacité sur la couleur. Ici un noir à 50% de transparence. */
     background-image: url('mon_image.jpg');
     background-position: center center;
     background-repeat: no-repeat; /* Quand une image est en "background", elle est répétée par défaut. Pour empêcher cela, il faut le spécifier */
-    float: left; /* Ferrer à gauche une boite */
-    clear: both; /* Réinitialiser le flux des floats : donc mettre à la ligne la boite */
+
+    /* Petits bonus */
     box-shadow: 2px 2px 2px 14px black;  /* Ombré d'un bloc */
     border-radius: 20px; /* Arrondi d'un bloc. TIP : pour faire un objet rond >> border-radius: 50%; */	
     opactity: 0.5 /* Opacité de l'élément. Ici : transparence à 50% */
@@ -129,3 +157,20 @@ h1 {
 }
 
 
+/* 
+ Les liens
+ */
+
+a {
+    display: inline-block;
+    color: white;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+
+    /* BONUS : transition permet une petite animation de l'état de départ de l'élément à l'état de fin de l'élément. Ici donc, une petite animation de transition sur le background et la couleur du lien */
+    transition: all .4s; 
+}
+    a:hover {
+        background-color: white;
+        color: blueviolet;
+    }
