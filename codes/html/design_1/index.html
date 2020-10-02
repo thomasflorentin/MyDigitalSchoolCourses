@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Design #1</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
     <header id="top_head">
         <div class="wrapper is_flex">
 
-            <div class="logo">
+            <div class="">
                 <h1>Instagram</h1>
             </div>
 
@@ -56,8 +56,32 @@
 
 
     <!-- LE HEADER AVEC LES INFORMATIONS DU COMPTE : visuel, nom, etc. -->
-    <header id="brand">
+    <header id="brand" class="wrapper is_flex">
+        <div class="brand_logo">
+            <img src="img/mep_logo.jpg" alt="" class="logo">
+        </div>
+        <div class="brand_infos">
+            <h1>mep.paris</h1>
+            <p>
+                <span><strong>1670</strong> publications</span>
+                <span><strong>99k</strong> abonnés</span>
+                <span><strong>890</strong> abonnements</span>
+            </p>
 
+            <p><strong>MEP</strong></p>
+            <p>MEP is dedicated to contemporary photography</p>
+
+            <div>
+                <hr class="hr">
+            </div>
+
+            <div class="cf">
+                <a href="">mep.paris/la-mep-en-ligne</a>
+                <p class="abonnes_list">abonnées : <span>untel</span>, <span>untel</span></p>    
+            </div>
+        </div>
+
+        
     </header><!-- end .wrapper -->
 
 
@@ -65,11 +89,14 @@
 
 
 
-
     <!-- LA GRILLE DE VISUELS -->
-    <main id="grid" class="wrapper">
-        ma grille de visuels
-        <img src="img/mep_1.jpg" alt="">
+    <main id="grid" class="wrapper is_flex">
+        <img src="img/mep_1.jpg" alt="" class="grid_item">
+        <img src="img/mep_2.jpg" alt="" class="grid_item">
+        <img src="img/mep_3.jpg" alt="" class="grid_item">
+        <img src="img/mep_4.jpg" alt="" class="grid_item">
+        <img src="img/mep_5.jpg" alt="" class="grid_item">
+        <img src="img/mep_6.jpg" alt="" class="grid_item">
     </main><!-- end .wrapper -->
 
 

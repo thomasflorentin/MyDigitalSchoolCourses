@@ -137,3 +137,9 @@ li:focus p {
     margin-bottom: 10px;
     border-bottom: 1px solid #bbb;
 }
+
+code {
+    background-color: rgb(238, 238, 238);
+    display: inline-block;
+    padding: 2px 4px 0px
+}

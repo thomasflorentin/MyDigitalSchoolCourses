@@ -19,12 +19,20 @@ selecteur {
  voir d'autres ici : https://devdocs.io/css-selectors/
  */
 
+* { box-sizing: border-box; } /* Le sélecteur général : il sélectionne TOUS les éléments présents */
+
 div { color: red; } /* une balise HTML */
+
 .ma_classe{ color: red; } /* une classe : <div class="ma_classe">...</div> */
 #mon_identifiant { color: red; } /* un identifiant : <div id="mon_identifiant">...</div> */
+
+/* PSEUDO-CLASSES */
 a:hover { color: red; } /* pseudo classe. ici l'état hover d'un lien */
 p:last-child { color: red; } /* pseudo classe, dernier enfant d'un type spécifique. Ici le dernier enfant p */
+
 [data-attr] { color: red; } /* un attribut, ici une balise HTML avec un attribut spécifique <div data-attr="">...</div> */
+
+/* COMBINAISONS */
 ul li { color: red; } /* une combinaison : tous les <li> contenus dans <ul>, enfants et grands-enfants confondus */
 ul > li { color: red; } /* une combinaison : tous les <li> directement enfant de <ul> (donc pas les grands-enfants */
 p + p  { color: red; } /* une combinaison : l'élément adjaçant (la balise <p> soeur d'une autre balise <p>) */
@@ -93,6 +101,7 @@ div {
 img {
     object-fit: cover; /* l'image "couvre" le block parent */
     object-position: center;
+    max-width: 100%;
 }
 
 
@@ -174,3 +183,6 @@ a {
         background-color: white;
         color: blueviolet;
     }
+
+
+    

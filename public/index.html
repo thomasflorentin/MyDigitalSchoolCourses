@@ -15,6 +15,12 @@
         <header>
             <h1>MyDigitalSchool Courses</h1>
             <p>2020-2021 // Développement Web // Premières années</p>
+            <ul style="display: flex; justify-content: flex-start; margin: 0; padding: 0; list-style: none;">
+                <li style="margin-right: 2px;"><a href="index.html">html+css</a></li>
+                <li style="margin-right: 2px;"><a href="algorithmes.html">algorithmes</a></li>
+                <li style="margin-right: 2px;"><a href="javascript.html">javascript</a></li>
+                <li style="margin-right: 2px;"><a href="php.html">php + mysql</a></li>
+            </ul>
         </header>
 
         <main>
@@ -41,23 +47,23 @@
                 <h3>théorie</h3>
                 <ul>
                     <li tabindex="0">
-                        syntaxe du HTML, le DOM : <a href="https://bitsofco.de/what-exactly-is-the-dom/">Cf. là</a>
+                        syntaxe du HTML, le DOM : <a target="_blank" href="https://bitsofco.de/what-exactly-is-the-dom/">Cf. là</a>
                     </li>
                     
                     <li tabindex="0">
-                        modèle de document HTML5 : <a href="../cheat_sheets/cheat_sheet.html">cf. cheat sheet</a>
+                        modèle de document HTML5 : <a target="_blank" href="../cheat_sheets/cheat_sheet.html">cf. cheat sheet</a>
                     </li>
                     
                     <li tabindex="0">
-                        les balises importantes : <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">Quelques exemples</a> 
+                        les balises importantes : <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">Quelques exemples</a> 
                     </li>
                     
                     <li tabindex="0">
-                        La sémantique HTML5 et importance sur la SEO et l'accessibilité : <a href="https://www.lifewire.com/why-use-semantic-html-3468271">What is Semantic?</a>
+                        La sémantique HTML5 et importance sur la SEO et l'accessibilité : <a target="_blank" href="https://www.lifewire.com/why-use-semantic-html-3468271">What is Semantic?</a>
                     </li>
                     
                     <li tabindex="0">
-                        de l'importance d'un code propre (indentation, commentaires, etc.) : <a href="https://medium.com/@sergimarquez/8-best-practices-to-write-clean-html-code-1cd407e2a7ec">cf. là</a>
+                        de l'importance d'un code propre (indentation, commentaires, etc.) : <a target="_blank" href="https://medium.com/@sergimarquez/8-best-practices-to-write-clean-html-code-1cd407e2a7ec">cf. là</a>
                     </li>
                     
                     <li tabindex="0">
@@ -80,7 +86,15 @@
                         Qu'est-ce qu'on peut faire avec le CSS : <a target="_blank" href="https://medium.mybridge.co/26-impressive-web-projects-built-with-css-only-4a4c2f773a21">cf. là</a>
                     </li>
                     <li>
-                        C'est quoi un "style" ? couleurs, règles typographiques, grilles, états hover, tailles de blocs, etc.
+                        C'est quoi un "style" ? 
+                        <ul>
+                            <li>couleurs : des caractères, des fonds, etc.</li>
+                            <li>règles typographiques : taille des caractères, hauteur de ligne, graisse, etc.</li>
+                            <li>grilles : comment aligner les éléments de notre page ? </li>
+                            <li>états hover : survol d'un lien avec la souris par exemple</li>
+                            <li>tailles de blocs : comment définir nos masses ? </li>
+                            <li>etc.</li>
+                        </ul> 
                     </li>
                     <li>
                         Cascade & Héritage : <a href="https://developer.mozilla.org/fr/docs/Apprendre/CSS/Building_blocks/Cascade_et_heritage" target="_blank">cf. là</a>
@@ -89,46 +103,40 @@
 
                 <h3>les sélecteur css</h3>
                 <ul>
-                    <li>une balise : h1 {... }</li>
-                    <li>une classe : .ma_classe {...}</li>
-                    <li>un identifiant : #mon_id {...}</li>
-                    <li>un attribut : [data-attr] {...}</li>
-                    <li>une combinaison : ul li {...} ou ul > li {...} ou p + p {...}</li>
+                    <li>une balise : <code>h1 {... }</code></li>
+                    <li>une classe : <code>.ma_classe {...}</code></li>
+                    <li>un identifiant : <code>#mon_id {...}</code></li>
+                    <li>un attribut : <code>[data-attr] {...}</code></li>
+                    <li>une combinaison : <code>ul li {...}</code> ou <code>ul > li {...}</code> ou <code>p + p {...}</code></li>
                 </ul>
 
                 <h3>Box Model</h3>
                     <ul>
-                        <li><a href="https://developer.mozilla.org/fr/docs/Apprendre/CSS/Building_blocks/Le_modele_de_boite">cf. là</a></li>
+                        <li>Le "Modèle de boite" en CSS définit si un élément est un BLOC ou "en ligne". 
+                            <ul>
+                                <li>Un BLOC comporte une largeur, une hauteur, des marges intérieures et extérieures, des bordures, etc.</li>
+                                <li>Un élément EN LIGNE s'insère dans le reste du contenu, ne comporte pas de largeur définie</li>
+                                <li><a target="_blank" href="https://developer.mozilla.org/fr/docs/Apprendre/CSS/Building_blocks/Le_modele_de_boite">cf. là</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 
                 <h3>Placement des blocs</h3>
                 <ul>
                     <li>float: left ou right</li>
-                    <li>flex : <a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox">cf. là</a></li>
-                    <li>grid : <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">cf. là</a></li>
+                    <li>flex : <a target="_blank" href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox">cf. là</a></li>
+                    <li>grid : <a target="_blank" href="https://css-tricks.com/snippets/css/complete-guide-grid/">cf. là</a></li>
                 </ul>
 
                 <h3>Typographie</h3>
                 <ul>
-                    <li><a href="https://cssreference.io/typography/">doc de référence</a></li>
-                    <li><a href="https://www.webfx.com/blog/web-design/css-typography-01/">documentation</a></li>
+                    <li><a target="_blank" href="https://cssreference.io/typography/">doc de référence</a></li>
+                    <li><a target="_blank" href="https://www.webfx.com/blog/web-design/css-typography-01/">documentation</a></li>
                 </ul>
             </section>
 
 
-            <section>
-                <div class="module_title">
-                    <span class="meta">html/css</span>
-                    <h2>Module #3 <br>Mise en pratique</h2>
-                </div>
 
-                <h3>display: flex</h3>
-                <ul>
-                    <li></li>
-                </ul>
-
-                
-            </section>
         </main>
 
         <footer>
