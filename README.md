@@ -2,7 +2,7 @@
 
 ## Cheat Sheet
 
-[html](cheat_sheets/balises.html) | [css](cheat_sheets/style.css) | [git](cheat_sheets/git.sh) | [vs code](cheat_sheets/vscode.md)
+[html](cheat_sheets/balises.html) | [css](cheat_sheets/styles.css) | [git](cheat_sheets/git.sh) | [vs code](cheat_sheets/vscode.md)
 
 ## Codes pour mises en pratique
 
@@ -10,6 +10,5 @@
 
 ## Programme de l'année sous forme de Modules 
 
-[Modules HTML+CSS](public/index.html)
-[Modules Algorithmes](public/algorithmes.html)
+[Modules HTML+CSS](public/index.html) | [Modules Algorithmes](public/algorithmes.html)
 
