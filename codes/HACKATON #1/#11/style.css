@@ -1,3 +1,28 @@
 /*
  * Mes styles
  */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+
+}
+
+aside {
+
+}
+
+h1 {
+
+}
+
+p {
+
+}

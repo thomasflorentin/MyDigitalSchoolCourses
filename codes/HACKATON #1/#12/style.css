@@ -1,3 +1,13 @@
 /*
  * Mes styles
  */
+
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+
+}

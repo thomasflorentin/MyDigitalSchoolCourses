@@ -1,3 +1,30 @@
 /*
  * Mes styles
  */
+
+body {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main {
+
+}
+
+aside {
+
+}
+
+article {
+    box-shadow: 0 0 0 1px #eef0f1;
+
+}
+
+h2 {
+
+}
+
+p {
+
+}
