@@ -12,17 +12,21 @@ body {
 }
 
 main {
-
+    width: 60%;
+    flex: 0 0 60%;
 }
 
 aside {
-
+    width: 30%;
+    flex: 0 0 30%;
 }
 
 h1 {
-
+    color: pink;
+    font-size: 30px;
+    text-align: right;
 }
 
 p {
-
+    font-size: 18px;
 }

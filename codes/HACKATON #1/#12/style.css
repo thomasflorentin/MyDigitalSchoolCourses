@@ -6,8 +6,14 @@
 section {
     display: flex;
     flex-direction: column;
+    border: 1px solid;
+    width: 300px;
 }
 
 a {
-
+    border-bottom: 1px solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
 }

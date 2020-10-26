@@ -4,5 +4,8 @@
 
 
 img {
-
+    border: 5px solid;
+    width: 600px;
+    margin: auto;
+    display: block;
 }

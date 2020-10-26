@@ -4,10 +4,15 @@
 
  
 div {
-
+    width: 50%;
+    background-color: red;
+    height: 400px;
+    margin: auto;
 }
 
 
 div div {
-
+    background-color: white;
+    height: 200px;
+    border: 1px solid blue;
 }

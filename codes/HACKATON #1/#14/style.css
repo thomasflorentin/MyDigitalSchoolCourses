@@ -4,11 +4,14 @@
 
 
 nav {
-    
+    background-color: black;
+    padding: 30px;
 }
 
 ul {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 li {
@@ -16,5 +19,6 @@ li {
 }
 
 a {
-
+    color: white;
+    text-decoration: none;
 }

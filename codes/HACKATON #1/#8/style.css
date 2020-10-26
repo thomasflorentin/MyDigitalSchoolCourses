@@ -4,5 +4,8 @@
 
  
 div {
-
+    width: 50%;
+    height: 400px;
+    background-color: red;
+    margin: auto;
 }
