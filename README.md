@@ -4,11 +4,18 @@
 
 [html](cheat_sheets/balises.html) | [css](cheat_sheets/styles.css) | [git](cheat_sheets/git.sh) | [vs code](cheat_sheets/vscode.md)
 
+## Sites de référence
+
+[dev.to](https://dev.to/) | [Documentation MDN](https://developer.mozilla.org/fr/) | [CSS Tricks](https://css-tricks.com/)
+
 ## Codes pour mises en pratique
 
 [design #1](codes/html/design_1/) | [design #2](codes/html/design_2/)
 
 ## Programme de l'année sous forme de Modules 
 
-[Modules HTML+CSS](public/index.html) | [Modules Algorithmes](public/algorithmes.html)
+[Accueil](https://optimistic-williams-9ca19e.netlify.app/) | [Modules HTML+CSS](public/index.html) | [Modules Algorithmes](public/algorithmes.html)
 
+## Beaux sites
+
+[awwwards](https://www.awwwards.com/) | [cssdesignawards](https://cssdesignawards.com/)
