@@ -1,15 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Le Titre de notre page HTML</title>
 </head>
+
 <body>
     
+    <!-- La Balise Header : on y place un menu ou le logo par exemple -->
+    <header id="mainhead" class="site-header" data-fonction="Un attribut personnalisé"></header>
+
+    <!-- La Balise nav : on y place un menu -->
+    <nav></nav>
+
+    <!-- la balise la plus commune du html : div -->
+    <div></div>
+
+    <!-- Balise pour le contenu principal -->
+    <main></main>
+
+    <!-- Balise pour un contenu non principal  -->
+    <aside></aside>
+
+    <!-- une section -->
+    <section></section>
+
+    <!-- un article -->
+    <article></article>    
+
+    <!-- balise d'un footer : footer du site ou footer d'un article par exemple -->
+    <footer></footer>
+
+    <!-- les balises de typo : titres, liens, listes, paragraphe, span, etc. -->
+    <h1>Un titre de niveau 1</h1>
+    <h2>Un titre de niveau 2</h2>
+    <h3>Un titre de niveau 3</h3>
+    <h4>Un titre de niveau 4</h4>
+    <h5>Un titre de niveau 5</h5>
+    <h6>Un titre de niveau 6</h6>
+
+    <a href="monlien.html" title="Titre de mon lien">Cliquez ici pour accéder à la page</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis natus quod quis fuga molestiae harum, autem laudantium recusandae iste distinctio fugiat sunt inventore repellendus ut ad sit perferendis eos minima?</p>
+
+    <span>un élément en ligne</span> <br> <!-- saut de ligne -->
+    <strong>un text gras</strong> <br> <!-- saut de ligne -->
+    <em>un text italique</em> <br> <!-- saut de ligne -->
+    <i>un text italique</i> <br> <!-- saut de ligne -->
+
+
+    <ul>
+        <li>un item</li>
+        <li>un item</li>
+    </ul>
+
+    <ol>
+        <li>un item</li>
+        <li>un item</li>
+    </ol>
+    
+
+    <!-- Les formulaires -->
+    <form action="">
+        <p>
+            <input type="text" name="" id="" placeholder="mon input text">
+        </p>
+        <p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <label for="pet-select">Faire un choix :</label>
+        </p>
+        <p>
+            <select name="pet-select" id="pet-select">
+                <option>mon choix numéro 1</option>
+                <option>mon choix numéro 2</option>
+                <option>mon choix numéro 3</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" name="" id="" value="Appuyez là !">
+        </p>
+    </form>
+
+
+    <!-- quelques exemples de groupes -->
     <header>
         <nav>
+            <!-- Une liste non numérotée -->
             <ul class="main_menu">
                 <li class="menu_item">
                     <a href="page.html" class="menu_link">lien</a>
@@ -18,29 +99,42 @@
                     <a href="page.html" class="menu_link">lien</a>
                 </li>
             </ul>
+
         </nav>
     </header>
 
-    <main></main>
 
-    <aside></aside>
+    <!-- quelques exemples de groupes -->
+    <article>
+        <h2>Titre de l'article</h2>
+        <img src="mon_image.jpg" alt="Titre de mon image dans l'attribut alt">
+        <p>Un paragraphe... <span>un bout de texte dans un span</span>, adipisicing elit. Inventore tenetur delectus repudiandae consequuntur provident? A alias temporibus sequi dicta adipisci quae fuga aliquam culpa amet consectetur itaque doloremque, hic ipsum?</p>
+        <footer>pied de page de ce bloc article</footer>
+    </article>
 
-    <section></section>
 
-    <div>
+    <!-- quelques exemples de groupes -->
+    <main>
+        <h1>Le titre de ma page</h1>
+        <section>
+            <img src="mon_image.jpg" alt="Le titre de mon image" class="maclasse">
+            <h1>Un titre de niveau 1</h1>
+            <p>Un paragraphe... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore tenetur delectus repudiandae consequuntur provident? A alias temporibus sequi dicta adipisci quae fuga aliquam culpa amet consectetur itaque doloremque, hic ipsum?</p>
+            <h2>Un titre de niveau 2</h2>
+            <p>Un paragraphe... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore tenetur delectus repudiandae consequuntur provident? A alias temporibus sequi dicta adipisci quae fuga aliquam culpa amet consectetur itaque doloremque, hic ipsum?</p>
+            <h3>Un titre de niveau 3</h3>
+            <p>Un paragraphe... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore tenetur delectus repudiandae consequuntur provident? A alias temporibus sequi dicta adipisci quae fuga aliquam culpa amet consectetur itaque doloremque, hic ipsum?</p>
+            <h2>Un titre de niveau 2</h2>
+            <p>Un paragraphe... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore tenetur delectus repudiandae consequuntur provident? A alias temporibus sequi dicta adipisci quae fuga aliquam culpa amet consectetur itaque doloremque, hic ipsum?</p>
+        </section>
+    </main>
 
-        <img src="mon_image.jpg" alt="Le titre de mon image" class="maclasse">
-        <h1>Un titre de niveau 1</h1>
-        <p>Un paragraphe... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore tenetur delectus repudiandae consequuntur provident? A alias temporibus sequi dicta adipisci quae fuga aliquam culpa amet consectetur itaque doloremque, hic ipsum?</p>
-        <h2>Un titre de niveau 2</h2>
-        <p>Un paragraphe... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore tenetur delectus repudiandae consequuntur provident? A alias temporibus sequi dicta adipisci quae fuga aliquam culpa amet consectetur itaque doloremque, hic ipsum?</p>
-        <h3>Un titre de niveau 3</h3>
-        <p>Un paragraphe... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore tenetur delectus repudiandae consequuntur provident? A alias temporibus sequi dicta adipisci quae fuga aliquam culpa amet consectetur itaque doloremque, hic ipsum?</p>
-        <h2>Un titre de niveau 2</h2>
-        <p>Un paragraphe... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore tenetur delectus repudiandae consequuntur provident? A alias temporibus sequi dicta adipisci quae fuga aliquam culpa amet consectetur itaque doloremque, hic ipsum?</p>
-    </div>
-    
-    <footer></footer>
+    <aside>
+        <h3>Un contenu annexe</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ea blanditiis magnam eum. Sed eum ipsa incidunt. Deserunt minima quibusdam unde obcaecati, ex labore laudantium enim ipsum velit expedita ut.</p>
+    </aside>
 
+
+<!-- IMPORTANT : fermeture des balises body et html  -->
 </body>
 </html>
