@@ -6,7 +6,11 @@
 
 ## Sites de référence
 
-[dev.to](https://dev.to/) | [Documentation MDN](https://developer.mozilla.org/fr/) | [CSS Tricks](https://css-tricks.com/)
+[dev.to](https://dev.to/) | [Documentation MDN](https://developer.mozilla.org/fr/) | [CSS Tricks](https://css-tricks.com/) | [Smashing Magazine](https://www.smashingmagazine.com/)
+
+## Newsletters de référence
+
+[dev.to](https://dev.to/) | [Sidebar](https://sidebar.io/) | [Smashing Magazine](https://www.smashingmagazine.com/the-smashing-newsletter/) | [JS Weekly](https://javascriptweekly.com/) | [HTML5 Weekly](https://frontendfoc.us/)
 
 ## Codes pour mises en pratique
 
@@ -19,3 +23,5 @@
 ## Beaux sites
 
 [awwwards](https://www.awwwards.com/) | [cssdesignawards](https://cssdesignawards.com/)
+
+
