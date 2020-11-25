@@ -2,7 +2,9 @@
  
  */
 
-
+    * {
+        box-sizing: border-box;
+    }
 
     @font-face {
         font-family: "Epilogue";
@@ -13,4 +15,65 @@
     body {
         font-family: Arial;
         font-family: "Epilogue";
+    }
+
+    #firstForm {
+        width: 200px;
+        margin: 20px auto;
+        background-color: aqua;
+        padding: 20px;
+        border: 1px solid black;
+    }
+
+    #loginForm {
+        background-color: aquamarine;
+        padding: 20px;
+        border: 1px solid gainsboro;
+        width: 400px;
+        margin: auto;
+        font-size: 1.4rem;
+    }
+
+    input,
+    select,
+    textarea {
+        box-sizing: border-box;
+        width: 100%;
+        display:  block;
+        margin: 10px 0 0 0;
+        padding: 10px;
+        border: none;
+        background-color: white;
+        font-size: 1.4rem;
+    }
+    label {
+        display: inline-block;
+        width: 100%;
+    }
+
+    input[type="checkbox"] {
+        display: inline;
+        width: auto;
+        margin: 0 10px 0 0;
+    }
+
+    #contactForm {
+        background-color: greenyellow;
+        padding: 20px;
+        width: 70%;
+        margin: 40px auto;
+    }
+    div {
+        margin-bottom: 40px;
+    }
+    p {
+        margin: 0;
+    }
+    div.flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    div > p {
+        width: 48%;
     }

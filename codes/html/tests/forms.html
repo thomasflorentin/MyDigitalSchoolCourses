@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        
+
+        <form id="contactForm" action="">
+
+            <div class="flex">
+                <p>
+                    <label for="name">Votre nom</label>
+                    <input type="text" id="name" name="name" placeholder="machin...">
+                </p>
+                <p>
+                    <label for="mail">Votre email</label>
+                    <input type="email" id="mail" name="mail" placeholder="he@domaine.com">
+                </p>
+            </div>
+
+            <div>
+                <label for="">Vous nous contactez pour...</label>
+                <select name="objet" id="objet">
+                    <option value="raler">... me plaindre</option>
+                    <option value="feliciter">... vous féliciter</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="msg">Votre message</label>
+                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="flex">
+                <input type="checkbox" name="copie" id="copie">
+                <label for="copie">REcevoir une copie du mail</label>
+            </div>
+
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+
+
+
+
+        <form id="firstForm" action="forms.html" method="get" class="form-example">
+            <input type="text" id="name" placeholder="votre nom">
+            <input type="submit" value="Subscribe!">
+        </form>
+
+        
+        <form id="loginForm" action="">
+
+            <label for="email">Votre email</label>
+            <input type="email" id="email" name="email" placeholder="votre email" />
+
+            <label for="mdp">votre mot de passe</label>
+            <input type="password" id="mdp" name="mdp" placeholder="*********" />
+
+            <p>
+                <input type="checkbox" id="staylogged" name="staylogged">
+                <label for="staylogged">Resté connecté</label>
+            </p>
+            
+            <input type="submit" id="submitLogin">
+
+        </form>
+
+
+
+
+
+
+    </body>
+</html> 
+
