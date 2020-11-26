@@ -4,6 +4,11 @@
 
 [html](cheat_sheets/balises.html) | [css](cheat_sheets/styles.css) | [git](cheat_sheets/git.sh) | [vs code](cheat_sheets/vscode.md)
 
+## Snippets utiles
+
+[Grille et position absolute](cheat_sheets/colonnes_et_absolute/)
+
+
 ## Sites de référence
 
 [dev.to](https://dev.to/) | [Documentation MDN](https://developer.mozilla.org/fr/) | [CSS Tricks](https://css-tricks.com/) | [Smashing Magazine](https://www.smashingmagazine.com/) | [scotch.io](https://scotch.io/) | [red stapler](https://redstapler.co) | [Piccalilli/](https://piccalil.li/)
