@@ -1,0 +1,103 @@
+/* 
+    Ceci est un fichier de styles qui permet de démmarrer correctement.
+
+    Conseils : 
+        - prenez le temps de bien lire les classes ci-dessous et leur propriétés : à quoi servent-elles ? comment les utiliser ? etc.
+        - utilisez ces classes à bon escient 
+        - adaptez les classes en fonction de votre projet : largeurs, marges internes, marges externes...
+ */
+
+
+
+/*
+ Déclarations générales
+ */
+
+ * {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 100%;
+}
+body {
+    font-size: 16px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+
+/* 
+ Des classes très générique que l'on va ajouter à plusieurs balises
+ */
+
+.wrapper { /* Une classe qui permet de définir la largeur de vos contenus. Cette largeur sera pareil la même et ainsi, vos contenus seront alignés. */
+    width: 80%;
+    max-width: 935px;
+    margin: auto;
+}
+
+.is_flex { /* définir un élément flex. Vous pouvez lui assigner cette classe ou bien le faire à la volée, via une autre classe à vous. */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nobullets { /* à utiliser dans une liste à puces, pour retirer les puces. Utile pour un menu par exemple... */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* 
+ Un système de colonnes très simple. A vous de l'ajuster en fonction de votre projet ! 
+ */
+
+.row {
+    margin-left:  auto;  
+    margin-right:  auto;
+}
+  
+.col {
+    float: left;
+}
+  
+.col1 {
+    width:  25%;
+}
+  
+.col2 {
+    width:  50%;
+}
+  
+.col3 {
+    width:  75%;
+}
+  
+.col4 {
+    width:  100%;
+}
+  
