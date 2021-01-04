@@ -2,12 +2,11 @@
 
 ## Cheat Sheet
 
-[html](cheat_sheets/balises.html) | [css](cheat_sheets/styles.css) | [git](cheat_sheets/git.sh) | [vs code](cheat_sheets/vscode.md)
+[html](cheat_sheets/balises.html) | [css](cheat_sheets/styles.css) | [php](cheat_sheets/php.php) | [mySQL](cheat_sheets/mysql.md) | [js](https://raw.githubusercontent.com/iLoveCodingOrg/javascript-cheatsheet/master/js-cheatsheet.pdf) | [git](cheat_sheets/git.sh) | [vs code](cheat_sheets/vscode.md) | 
 
 ## Snippets utiles
 
 [Grille et position absolute](cheat_sheets/colonnes_et_absolute/)
-
 
 ## Sites de référence
 
@@ -29,7 +28,7 @@
 
 [awwwards](https://www.awwwards.com/) | [cssdesignawards](https://cssdesignawards.com/) | [Codepen](https://codepen.io/)
 
-# Ressources languages
+# Ressources languages (livres, documentation)
 
 ## Tout
 
