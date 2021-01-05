@@ -1,22 +1,49 @@
 <?php
 
-//Naming convention
-$first_name = 'Mike'. // all lower case with underscore separators
-function updateProduct() // camelCase
-class ProductItem // StudlyCaps
+
+/* 
+ * CONVENTION DE NOMMAGE
+ ********************/
+
+$first_name = 'Mike'; // all lower case with underscore separators
+function updateProduct() { // camelCase
+    ...
+} 
+class ProductItem { // StudlyCaps
+    ...
+}; 
 const ACCESS_KEY = '123abc'; // all upper case with underscore separators
 
-//output
-echo 'Hello World';
 
-//variable declaration
+
+
+/* 
+ * AFFICHER 
+ ********************/
+
+echo 'Hello World';
+echo $first_name;
+echo ('Hello World');
+echo ($first_name);
+
+print $first_name;
+print($first_name);
+
+
+
+
+/* 
+ * VARIABLES
+ ********************/
+
+// déclarer une variable
 $name = 'Mike'; //string
 $is_active = true; //boolean
 $number = 25; //integer
 $amount = 99.95; //float
 
 
-//string concat
+// concaténation
 echo 'Hello ' . $name;
 
 //string escape characters \n new line  \t tab  \\ backslash
@@ -67,14 +94,6 @@ echo $name ?? 'Mike';  //output 'Mike' if $name is null
 //Null Coalesce Assignment
 $name ??= 'Mike';
 
-
-// Null Safe Operator (PHP 8) will return null if one ? is null
-echo $user?->profile?->activate();
-
-// Null Safe + Null Coalesce (if null will return 'No user profile')
-echo $user?->profile?->activate() ?? 'Not applicable';
-
-
 //Spaceship operator return -1 0 1
 $names = ['Mike', 'Paul', 'John']
 usort($names, function($a, $b) {
@@ -83,7 +102,12 @@ usort($names, function($a, $b) {
 // ['John', 'Mike', 'Paul']
 
 
-// print variables contents (for debug)
+
+
+/* 
+ * Afficher le contenus de variables pour débugger
+ ********************/
+
 var_dump($names);
 print_r($names);
 
@@ -91,7 +115,12 @@ print_r($names);
 die();
 
 
-//Conditionals
+
+
+/* 
+ * CONDITIONS
+ ********************/
+
 if ($condition == 10) {
     echo 'condition 10'
 } elseif  ($condition == 5) {
@@ -100,7 +129,7 @@ if ($condition == 10) {
     echo 'all other conditions'
 }
 
-//Comparaison operation
+// Opérations de comparaison
 == // equal no type check
 === // equal with type check
 != //not equal
@@ -118,6 +147,12 @@ $type = match($color) {
     default => 'Unknown'
 };
 
+
+
+
+/* 
+ * BOUCLES
+ ********************/
 
 //for loop
 for ($i = 0; $i < 20; $i++) {
@@ -140,6 +175,12 @@ do {
     $number += 1;
 } while ($number < 10);
 
+
+
+
+/* 
+ * TABLEAUX (ARRAY)
+ ********************/
 
 //Array declaration
 $names = ['Mike', 'Peter', 'Shawn', 'John'];
@@ -229,12 +270,18 @@ $only_names = array_map(function($person) {
 }, $people)
 
 
-//function declararion
+
+
+/* 
+ * FONCTIONS
+ ********************/
+
+// déclaration de la fonction
 function name($first_name, $last_name = 'default value') {
     puts $first_name . ' ' . $last_name
 }
 
-//function call
+// appel de la fonction
 name('Mike', 'Taylor');
 
 //function call with named parameters (PHP 8)
@@ -255,6 +302,12 @@ Route::get('/', function () {
 // Arrow functions
 Route::get('/', fn () => return view('welcome');
 
+
+
+
+/* 
+ * LECTURES DE FICHIERS
+ ********************/
 
 //File read
 $file = fopen("test.txt", "r");
@@ -281,6 +334,12 @@ foreach ($array as $row) {
 fclose($file);
 
 
+
+
+/* 
+ * GESTION DES ERREURS
+ ********************/
+
 //Throw Error
 if (someCondition) {
     throw new Exception('Data format error');
@@ -295,13 +354,19 @@ try {
 }
 
 
-//class declaration
-class Person 
-{
+
+
+/* 
+ * CLASSES
+ ********************/
+
+// Déclaration de la classe
+class Person {
+    ...
 }
 
 
-// object instantiation
+// Instentiation de l'objet
 $person = new Person
 
 
