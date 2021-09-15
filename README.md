@@ -12,14 +12,6 @@
 
 [dev.to](https://dev.to/) | [Sidebar](https://sidebar.io/) | [Smashing Magazine](https://www.smashingmagazine.com/the-smashing-newsletter/) | [JS Weekly](https://javascriptweekly.com/) | [HTML5 Weekly](https://frontendfoc.us/) | [A List Apart](https://alistapart.com/)
 
-## Codes pour mises en pratique
-
-[design #1](codes/html/design_1/) | [design #2](codes/html/design_2/)
-
-## Programme de l'année sous forme de Modules 
-
-[Accueil](https://optimistic-williams-9ca19e.netlify.app/) | [Modules HTML+CSS](public/index.html) | [Modules Algorithmes](public/algorithmes.html)
-
 ## Beaux sites & Codes
 
 [awwwards](https://www.awwwards.com/) | [cssdesignawards](https://cssdesignawards.com/) | [Codepen](https://codepen.io/)
@@ -32,8 +24,10 @@
 
 ## Javascript
 
-[JavaScript - The Right Way ](https://jstherightway.org/) | [Eloquent Javascript](https://eloquentjavascript.net/) | 
+[JavaScript Info (la meilleur doc en ligne) ](https://javascript.info/) | [JavaScript - The Right Way ](https://jstherightway.org/) | [Eloquent Javascript](https://eloquentjavascript.net/) | 
 
+## PHP
 
+[PHP.net](https://www.php.net/manual/fr/) 
 
 
