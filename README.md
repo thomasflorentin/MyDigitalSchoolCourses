@@ -2,11 +2,7 @@
 
 ## Cheat Sheet
 
-[html](cheat_sheets/balises.html) | [css](cheat_sheets/styles.css) | [php](cheat_sheets/php.php) | [mySQL](cheat_sheets/mysql.md) | [js](https://raw.githubusercontent.com/iLoveCodingOrg/javascript-cheatsheet/master/js-cheatsheet.pdf) | [git](cheat_sheets/git.sh) | [vs code](cheat_sheets/vscode.md) | 
-
-## Snippets utiles
-
-[Grille et position absolute](cheat_sheets/colonnes_et_absolute/)
+[All Cheatsheets (codecademy)](https://www.codecademy.com/resources/cheatsheets/all) | [mySQL](cheat_sheets/mysql.md) | [git](cheat_sheets/git.sh) | [vs code](cheat_sheets/vscode.md) | 
 
 ## Sites de référence
 

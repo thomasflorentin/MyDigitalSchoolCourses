@@ -1,7 +1,5 @@
 <?php
 
-
-
     function db() {
         global $link;
         $dbhost = 'sql2.freesqldatabase.com';
