@@ -1,0 +1,18 @@
+
+@import 'reset'
+
+$red: #ff0000
+
+$arial: arial, sans-serif
+
+
+.class 
+    color: $red
+    font-family: $aria
+
+    p
+        color: white
+
+    &:after
+        
+

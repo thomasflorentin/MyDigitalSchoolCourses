@@ -6,24 +6,22 @@
     }
 
     require_once("db_connect.php");
+
     if(isset($_POST['submit'])) {
+
         $title = $_POST['todoTitle'];
         $description = $_POST['todoDescription'];
         
         //connect to database
-        db();
-        global $link;
+        $db = db();
         
-        $query = "INSERT INTO todo(todoTitle, todoDescription, date) VALUES ('$title', '$description', now() )";
-        $insertTodo = mysqli_query($link, $query);
+        $sql = "INSERT INTO todo(todoTitle, todoDescription, date) VALUES ('$title', '$description', now() )";
+
+        $db->exec($sql);
+        echo "New record created successfully";
         
-        if($insertTodo){
-            echo "successfully";
-        }
-        else{
-            echo mysqli_error($link);
-        }
-        mysqli_close($link); 
+
+        $conn = null;
     }
 
 ?>

@@ -27,23 +27,31 @@
 <h2>
  Next on my agenda
 </h2>
+
 <?php 
     require_once("db_connect.php");
 
-    db();
-    global $link;
+    $db = db();
     $query = "SELECT id, todoTitle, todoDescription, date FROM todo";
-    $result = mysqli_query($link, $query);
-    //check if there’s any data inside the table
-    if(mysqli_num_rows($result) >= 1){
-    while($row = mysqli_fetch_array($result)){
-    $id = $row['id'];
-    $title = $row['todoTitle'];
-    $date = $row['date'];?><ul>
-    <li><a href="detail.php?id=<?php echo $id?>"><?php echo $title ?></a></li> <?php echo "[[ $date ]]";?>
-    </ul>
-    <?php
+    $result = $db->query($query, PDO::FETCH_ASSOC);
+
+var_dump($result);
+
+
+    if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+
+        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+
     }
-    }?>
+    } else {
+    echo "0 results";
+    }
+    $conn->close();
+
+ ?>
+
+
 </body>
 </html>

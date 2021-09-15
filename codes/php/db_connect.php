@@ -1,9 +1,26 @@
 <?php
 
+
+
     function db() {
         global $link;
-        $link = mysqli_connect("localhost", "root", "root", "mds_todo_app") or die("couldn’t connect to database");
-        return $link;
+        $dbhost = 'sql2.freesqldatabase.com';
+        $dbuser = 'sql2392149';
+        $dbname = 'sql2392149';
+        $dbpass = 'uG2%jB2%';
+
+        $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'); 
+
+        try 
+        { 
+            $db = new PDO("mysql:host={$dbhost};dbname={$dbname};charset=utf8", $dbuser, $dbpass, $options); 
+        } 
+        catch(PDOException $ex) 
+        { 
+            die("Failed to connect to the database: " . $ex->getMessage()); 
+        } 
+
+        return $db;
     }
 
     if(db()){
